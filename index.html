@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tematy JD</title>
+    <script src="script.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;500&display=swap');
+        html {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(to top, #2c3e50, #20303a);
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+        h3 {
+            color: white;
+            font-family: 'Poppins';
+            font-weight: 500;
+            margin: 5px;
+        }
+        p {
+            color: white;
+            font-family: 'Poppins';
+            font-weight: 100;
+            margin-top: 10px;  
+            text-align: center;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        input {
+            border: none;
+            outline: none;
+            background: transparent;
+            border-bottom: 1px solid white;
+            width: 60vw;
+            color: white;
+            font-family: 'Poppins';
+        }
+        button {
+            border: none;
+            outline: none;
+            background: transparent;
+            padding: 5px 10px 5px 10px;
+            font-family: 'Poppins';
+            margin-top: 30px;
+            background: linear-gradient(to top, #cccccc, #ffffff);
+            border-radius: 5px;
+        }
+        button:hover {
+            background: linear-gradient(to top, #cccccc, #ffffff);
+        }
+        button:active {
+            background: linear-gradient(to top, #ffffff, #cccccc);
+        }
+    </style>
+</head>
+<body>
+    <h3>Tematy JD</h3>
+    <p>O czym dziś opowiadał nasz nauczyciel zamiast robić lekcję?</p>
+    <input type="text" id="input">
+    <button id="button" onclick='makeRequest()'>Wyślij</button>
+</body>
+</html>
